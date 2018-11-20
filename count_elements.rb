@@ -1,6 +1,7 @@
 def count_elements(array)
   hash = new_hash(array)
-  
+  array.each{|el| hash[el] += 1}
+  hash
 end
  
 def new_hash(array)
